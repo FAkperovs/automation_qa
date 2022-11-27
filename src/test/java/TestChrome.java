@@ -1,9 +1,14 @@
+import lv.acodemy.page_object.InventoryPage;
+import lv.acodemy.page_object.LoginPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 import static lv.acodemy.constants.Generic.GOOGLE_URL;
 import static org.testng.Assert.assertEquals;
@@ -47,4 +52,5 @@ public class TestChrome {
 
         assertEquals(driver.getTitle(), "acodemy - Google Search");
     }
+
 }
